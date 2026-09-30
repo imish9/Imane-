@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Fredoka', 'Quicksand', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+.font-script {
+  font-family: 'Pacifico', cursive;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', 'Mali', cursive;
+}
+
+.font-cute {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-retro {
+  font-family: 'Shrikhand', cursive, sans-serif;
+}
+
+.font-retro-candy {
+  font-family: 'Cherry Bomb One', cursive, sans-serif;
+}
+
+.font-dynapuff {
+  font-family: 'DynaPuff', cursive, sans-serif;
+}
+
+.font-swash {
+  font-family: 'Berkshire Swash', cursive, serif;
+}
+
+/* Retro Shiny Glitter Text */
+.retro-shiny-text {
+  background: linear-gradient(
+    120deg,
+    #E11D48 0%,
+    #FF2E74 20%,
+    #FFF 40%,
+    #FF4D8D 60%,
+    #BE123C 80%,
+    #FF1493 100%
+  );
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineShimmer 4s linear infinite;
+  filter: drop-shadow(0 2px 4px rgba(225, 29, 72, 0.25));
+}
+
+.retro-gold-shine {
+  background: linear-gradient(
+    120deg,
+    #D97706 0%,
+    #FBBF24 25%,
+    #FFFBEB 50%,
+    #F59E0B 75%,
+    #B45309 100%
+  );
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineShimmer 3.5s linear infinite;
+}
+
+@keyframes shineShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Retro 3D Stamped Text */
+.retro-3d-title {
+  text-shadow:
+    1px 1px 0px #FFB6C1,
+    2px 2px 0px #FF69B4,
+    3px 3px 0px #BE185D,
+    4px 4px 6px rgba(190, 24, 93, 0.35);
+}
+
+/* Handmade Crochet Border Motif */
+.crochet-border {
+  border: 4px dashed #F9A8D4;
+  border-radius: 28px;
+  position: relative;
+}
+
+.crochet-scallop {
+  background-image: radial-gradient(circle at 10px 0, transparent 10px, #FFF0F5 10.5px);
+  background-size: 20px 20px;
+  background-repeat: repeat-x;
+}
+
+/* Washi tape effect */
+.washi-tape {
+  background: rgba(255, 182, 193, 0.7);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  position: relative;
+  backdrop-filter: blur(2px);
+  mask-image: linear-gradient(to right, transparent 0, black 5px, black calc(100% - 5px), transparent 100%);
+}
+
+.washi-tape-yellow {
+  background: rgba(254, 240, 138, 0.75);
+}
+
+/* Soft Kawaii Background Dot Grid */
+.bg-kawaii-pattern {
+  background-color: #FFF5F7;
+  background-image: 
+    radial-gradient(#FBCFE8 1.2px, transparent 1.2px), 
+    radial-gradient(#FED7AA 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+/* Crochet knit texture overlay */
+.bg-crochet-texture {
+  background-image: radial-gradient(#F9A8D4 0.75px, transparent 0.75px);
+  background-size: 8px 8px;
+}
+
+/* Animations */
+@keyframes mysticPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(244, 114, 182, 0.7), 0 0 40px rgba(251, 191, 36, 0.4), 0 0 60px rgba(254, 205, 211, 0.5);
+  }
+  50% {
+    transform: scale(1.18);
+    box-shadow: 0 0 35px rgba(225, 29, 72, 0.95), 0 0 65px rgba(251, 191, 36, 0.7), 0 0 90px rgba(255, 105, 180, 0.7);
+  }
+}
+
+.animate-mystic-pulse {
+  animation: mysticPulse 2.4s infinite ease-in-out;
+}
+
+@keyframes megaGlow {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(255, 26, 102, 0.55), 0 0 50px rgba(255, 105, 180, 0.35), 0 0 80px rgba(251, 191, 36, 0.25);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(255, 26, 102, 0.85), 0 0 75px rgba(255, 105, 180, 0.6), 0 0 110px rgba(251, 191, 36, 0.45);
+    transform: scale(1.035);
+  }
+}
+
+.animate-mega-glow {
+  animation: megaGlow 2.8s infinite ease-in-out;
+}
+
+@keyframes rubyGlint {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(244, 63, 94, 0.4), 0 0 20px rgba(254, 205, 211, 0.6);
+  }
+  50% {
+    transform: scale(1.12);
+    box-shadow: 0 0 18px rgba(225, 29, 72, 0.8), 0 0 28px rgba(251, 191, 36, 0.6);
+  }
+}
+
+.animate-ruby-glint {
+  animation: rubyGlint 2.2s infinite ease-in-out;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+@keyframes gentlePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.85) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15) rotate(15deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-pulse-gentle {
+  animation: gentlePulse 3s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 2.5s ease-in-out infinite;
+}

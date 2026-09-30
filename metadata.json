@@ -1,0 +1,6 @@
+{
+  "name": "Joyeux Anniversaire Imane 🎀",
+  "description": "Site d'anniversaire interactif kawaii et scrapbook pour Imane avec roue de la chance, surprises et décorations féeriques.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
